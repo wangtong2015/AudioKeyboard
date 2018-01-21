@@ -54,7 +54,7 @@
         android:id="@+id/candidates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/text"
+        android:layout_alignStart="@id/text"
         android:layout_below="@id/text"
         android:layout_marginTop="54dp"
         android:textSize="30sp"
@@ -87,28 +87,28 @@
         android:text="relative" />
 
     <Button
-        android:id="@+id/speed_m_button"
+        android:id="@+id/speedControl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@id/confirm_button"
-        android:text="speed-" />
+        android:text="Speed" />
 
     <Button
-        android:id="@+id/speed_p_button"
+        android:id="@+id/testMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/speed_m_button"
-        android:text="speed+" />
+        android:layout_below="@id/speedControl"
+        android:text="Normal" />
 
     <TextView
         android:id="@+id/voice_speed_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/speed_p_button"
+        android:layout_above="@id/testMode"
         android:layout_marginEnd="16dp"
-        android:layout_toStartOf="@id/speed_m_button"
+        android:layout_toStartOf="@id/speedControl"
         android:text="50"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         android:textSize="30sp" />
@@ -120,4 +120,24 @@
         android:max="100"
         android:visibility="invisible"
         />
+    <Button
+        android:id="@+id/testTurnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TESTTURN"
+        android:layout_below="@id/testMode"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/testTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testMode"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/testTurnChange"
+        android:text="8"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textSize="30sp" />
+    
+
 </RelativeLayout>
