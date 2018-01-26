@@ -826,8 +826,8 @@ public class MainActivity extends AppCompatActivity {
         float screen_width_ratio = 1F;
         float screen_height_ratio = 1F;
         //Fuzzy Input Test Var
-        float keyboardHeight=570;
-        float keyboardWidth=1438;
+        float keyboardHeight=570;// 键盘高度
+        float keyboardWidth=1438;// 键盘宽度
         float deltaY=190;
         float topThreshold=0;// �Ͻ�
         float bottomThreshold=955;// �½�
@@ -1189,7 +1189,7 @@ public class MainActivity extends AppCompatActivity {
             this.textPaint.setStrokeJoin(Paint.Join.ROUND);
             this.textPaint.setStrokeCap(Paint.Cap.ROUND);
             this.textPaint.setStrokeWidth(3);
-            this.textPaint.setTextSize(Math.round(40*screen_height_ratio));
+            this.textPaint.setTextSize(Math.round(40*screen_height_ratio));// 字母大小为40，想调大就改这里
             this.keyboard=keyBoard;
 
             getScreenSizeRatio();
